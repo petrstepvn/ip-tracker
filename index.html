@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./style.css">
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+	integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+	crossorigin=""/>
+	<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+	integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+	crossorigin="" defer></script>
+	<script src="./script.js" defer></script>
+	<title>IP Address Tracker</title>
+</head>
+<body>
+	<header>
+		<section class="section-input">
+			<h2>IP Address Tracker</h2>
+			<form action="" class="form-input">
+				<input id="inputIP" type="text" class="input" placeholder="Search for any IP address or domain" autofocus>
+				<input type="submit" value="" class="submit">
+			</form>
+		</section>
+		<section class="section-result">
+			<div class="result-item">
+				<h4 class="result-title">IP Address</h4>
+				<p class="result-body" id="resIP"></p>
+			</div>
+			<div class="result-item">
+				<h4 class="result-title">Location</h4>
+				<p class="result-body" id="resLocation"></p>
+			</div>
+			<div class="result-item">
+				<h4 class="result-title">Timezone</h4>
+				<p class="result-body" id="resTimezone"></p>
+			</div>
+			<div class="result-item">
+				<h4 class="result-title">ISP</h4>
+				<p class="result-body" id="resISP"></p>
+			</div>
+		</section>
+	</header>
+
+	<div id="mapid"></div>
+</body>
+</html>
